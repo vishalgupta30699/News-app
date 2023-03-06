@@ -1,27 +1,45 @@
-# Next.js + Tailwind CSS Example
+This is a News App built with Next.js that utilizes the Media Stack API to fetch news articles from various sources.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+### Getting Started
 
-## Deploy your own
+To get started with the project, you can either download the project as a zip file or clone the repository using the following command:
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+git clone https://github.com/vishalgupta30699/news-app.git
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+Once you have the project files, navigate to the root directory and install the dependencies by running:
 
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+```
+npm install
 ```
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+
+### Environment Variables
+
+This project requires the following environment variables to be set:
+
+NEXT_PUBLIC_API_KEY: This is your API key for the Media Stack API.
+You can obtain an API key by creating an account on the Media Stack website.
+
+Create a file named .env.local in the root directory of the project and add your environment variables in the following format:
+
+NEXT_PUBLIC_API_KEY=your_api_key_here
+
+### Running the App
+
+Once you have set up the environment variables, you can run the app by running:
+
+```
+npm run build
 ```
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+This will create an optimized production build in the out directory.
+
+### To deploy the app
+
+you can use Vercel. Simply create a new project on Vercel and link it to your GitHub repository. Vercel will automatically deploy the app whenever you push changes to the main branch.
+
+Alternatively, you can deploy the app to any other hosting provider of your choice by copying the contents of the out directory to your server.
+
+### Live Demo
+You can view a live demo of the app at https://news-app-vishalgupta30699.vercel.app/
